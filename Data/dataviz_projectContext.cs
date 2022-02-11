@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DataVisualizationAPI
 {
-    public partial class dataviz_projectContext : DbContext
+    public partial class DataViz_ProjectContext : DbContext
     {
-        public dataviz_projectContext()
+        public DataViz_ProjectContext()
         {
         }
 
-        public dataviz_projectContext(DbContextOptions<dataviz_projectContext> options)
+        public DataViz_ProjectContext(DbContextOptions<DataViz_ProjectContext> options)
             : base(options)
         {
         }
