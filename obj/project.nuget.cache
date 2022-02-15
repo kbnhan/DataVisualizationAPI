@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hN0ysZkkpeYT4Z5hPcZdtSxCc8dHihwfzSg742051hU+pAi+xmgRVb2fuaKFTA10phCzGRMi1wS0fRmdSSRtpQ==",
+  "dgSpecHash": "rfRNZIiq+hwdPsv8WV9qMHBSFwsQhOwGm2B2vBikYNNPoPpGeuwavNFKVcRnX6CKc2XhXtfr+j4DU6b3nCR+HA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kevin\\Projects\\DataVisualization\\DataVisualizationAPI\\DataVisualizationAPI.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\Kevin\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\mysqlconnector\\2.1.6\\mysqlconnector.2.1.6.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.1\\pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Kevin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
