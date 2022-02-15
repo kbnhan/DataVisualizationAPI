@@ -16,7 +16,7 @@ namespace DataVisualizationAPI
         {
         }
 
-        public virtual DbSet<FairMarketRent> Fairmarketrents { get; set; } = null!;
+        public virtual DbSet<FairMarketRent> FairMarketRents { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
