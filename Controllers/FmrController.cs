@@ -14,16 +14,30 @@ namespace DataVisualizationAPI
             _context = context;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public ActionResult<FairMarketRent> Get(int id)
         {
             var fmr = _context.FairMarketRents
+            .AsNoTracking()
             .Single(f => f.Id == id);
 
             if (fmr == null)
                 return NotFound();
 
             return fmr;
+        }
+
+        [HttpGet("areanames/{state}")]
+        public ActionResult<List<string>> Get(string state)
+        {
+            var fmrs = _context.FairMarketRents
+            .AsNoTracking()
+            .Where(f => f.State == state);
+
+            if (fmrs == null)
+                return NotFound();
+
+            return fmrs.Select(f => f.Areaname).Distinct().ToList();
         }
     }
 }
