@@ -1,4 +1,4 @@
-using DataVisualizationAPI;
+using DataVisualizationAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

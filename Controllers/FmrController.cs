@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using DataVisualizationAPI.Models;
+using DataVisualizationAPI.Data;
 
-namespace DataVisualizationAPI
+namespace DataVisualizationAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

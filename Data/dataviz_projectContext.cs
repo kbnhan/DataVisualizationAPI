@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using DataVisualizationAPI.Models;
 
-namespace DataVisualizationAPI
+namespace DataVisualizationAPI.Data
 {
     public partial class DataViz_ProjectContext : DbContext
     {
