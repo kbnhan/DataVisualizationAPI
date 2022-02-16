@@ -1,5 +1,6 @@
-using DataVisualizationAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using DataVisualizationAPI.Data;
+using DataVisualizationAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ var serverVersion = new MariaDbServerVersion(ServerVersion.AutoDetect(connection
 
 // Add services to the container.
 builder.Services.AddDbContext<DataViz_ProjectContext>(options => options.UseMySql(connectionString, serverVersion));
+builder.Services.AddScoped<FmrService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

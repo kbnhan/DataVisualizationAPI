@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using DataVisualizationAPI.Models;
-using DataVisualizationAPI.Data;
+using DataVisualizationAPI.Services;
 
 namespace DataVisualizationAPI.Controllers
 {
@@ -9,19 +8,17 @@ namespace DataVisualizationAPI.Controllers
     [Route("[controller]")]
     public class FmrController : ControllerBase
     {
-        DataViz_ProjectContext _context;
+        FmrService _service;
 
-        public FmrController(DataViz_ProjectContext context)
+        public FmrController(FmrService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [HttpGet("{id:int}")]
         public ActionResult<FairMarketRent> Get(int id)
         {
-            var fmr = _context.FairMarketRents
-            .AsNoTracking()
-            .Single(f => f.Id == id);
+            var fmr = _service.GetById(id);
 
             if (fmr == null)
                 return NotFound();
@@ -32,9 +29,7 @@ namespace DataVisualizationAPI.Controllers
         [HttpGet("areanames/{state}")]
         public ActionResult<List<string>> Get(string state)
         {
-            var fmrs = _context.FairMarketRents
-            .AsNoTracking()
-            .Where(f => f.State == state);
+            var fmrs = _service.GetAreanames(state);
 
             if (fmrs == null)
                 return NotFound();
