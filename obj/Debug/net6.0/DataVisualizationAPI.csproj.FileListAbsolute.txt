@@ -4,7 +4,6 @@ C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\DataVisualizationAPI.deps.json
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\DataVisualizationAPI.runtimeconfig.json
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\DataVisualizationAPI.dll
-C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\ref\DataVisualizationAPI.dll
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\DataVisualizationAPI.pdb
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -33,3 +32,4 @@ C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\obj\Debug\net6.0\
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\obj\Debug\net6.0\ref\DataVisualizationAPI.dll
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\obj\Debug\net6.0\DataVisualizationAPI.pdb
 C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\obj\Debug\net6.0\DataVisualizationAPI.genruntimeconfig.cache
+C:\Users\Kevin\Projects\DataVisualization\DataVisualizationAPI\obj\Debug\net6.0\refint\DataVisualizationAPI.dll
