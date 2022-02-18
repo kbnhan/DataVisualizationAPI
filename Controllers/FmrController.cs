@@ -49,9 +49,14 @@ namespace DataVisualizationAPI.Controllers
         }
 
         [HttpGet("search/{areaname}")]
-        public ActionResult<IEnumerable<FairMarketRent>> Get(string areaname, [FromQuery] short startYear, [FromQuery] short endYear)
+        public ActionResult<IEnumerable<FairMarketRent>> Get(string areaname, [FromQuery] short startYear, [FromQuery] short endYear, [FromQuery] string[] bedrooms)
         {
-            var fmrs = _service.GetFairMarketRents(areaname, startYear, endYear);
+            IQueryable<FairMarketRent> fmrs;
+
+            if (bedrooms.Length > 0)
+                fmrs = _service.GetFairMarketRents(areaname, startYear, endYear, bedrooms.ToList());
+            else
+                fmrs = _service.GetFairMarketRents(areaname, startYear, endYear);
 
             if (fmrs == null)
                 return NotFound();

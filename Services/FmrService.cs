@@ -49,5 +49,18 @@ namespace DataVisualizationAPI.Services
                     && f.Year <= endYear
                 );
         }
+
+        public IQueryable<FairMarketRent> GetFairMarketRents(string areaname, short startYear, short endYear, List<string> bedrooms)
+        {
+            return _context.FairMarketRents
+                .AsNoTracking()
+                .Where
+                (
+                    f => f.Areaname == areaname
+                    && f.Year >= startYear
+                    && f.Year <= endYear
+                )
+                .Where(f => bedrooms.Contains(f.Bedrooms));
+        }
     }
 }
