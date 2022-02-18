@@ -36,6 +36,17 @@ namespace DataVisualizationAPI.Controllers
 
             return fmrs.Select(f => f.Areaname).Distinct().ToList();
         }
+
+        [HttpGet("search/{areaname}/{year:int}")]
+        public ActionResult<IEnumerable<FairMarketRent>> Get(string areaname, short year)
+        {
+            var fmrs = _service.GetFairMarketRents(areaname, year);
+
+            if (fmrs == null)
+                return NotFound();
+
+            return fmrs.ToList();
+        }
     }
 }
 
