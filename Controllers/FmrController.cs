@@ -47,6 +47,17 @@ namespace DataVisualizationAPI.Controllers
 
             return fmrs.ToList();
         }
+
+        [HttpGet("search/{areaname}")]
+        public ActionResult<IEnumerable<FairMarketRent>> Get(string areaname, [FromQuery] short startYear, [FromQuery] short endYear)
+        {
+            var fmrs = _service.GetFairMarketRents(areaname, startYear, endYear);
+
+            if (fmrs == null)
+                return NotFound();
+            
+            return fmrs.ToList();
+        }
     }
 }
 
